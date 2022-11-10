@@ -20,5 +20,6 @@ public class C08_DateTimeException {
 
         }
         System.out.println("code sonuna kadar çalıştı");
+        System.out.println("değiştiklik");
     }
 }
