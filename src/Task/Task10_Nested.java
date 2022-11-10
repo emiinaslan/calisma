@@ -1,0 +1,36 @@
+package Task;
+
+import java.util.Scanner;
+
+public class Task10_Nested {
+    /*
+    task--> girilen bir ifadenin istenen harf sayısını print eden code create edeniz
+    input selam java canlar
+    output a sayısı = 3
+     */
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Lutfen bir cumle giriniz : ");
+        String cumle = scan.nextLine().toLowerCase();
+
+        System.out.println("Lutfen bir harf giriniz : ");
+        char harf=scan.next().toLowerCase(). charAt(0);
+        int count = 0;
+
+        for (int i = 0; i < cumle.length(); i++) {
+
+            if (cumle.charAt(i)==harf) {
+
+                count++;
+            }
+        }
+        System.out.println("Girdiginiz cumlede " +harf +" karakteri "+ count+ " kere kullanilmistir");
+
+
+
+
+
+
+    }//main sonu
+}

@@ -10,7 +10,7 @@ public class Runner {
         System.out.println("odenecek bonus: " + employee.bonus() + "tl");
         System.out.println("maaş artışı:"+employee.raiseSalary()+ "tl");
         System.out.println("toplam ödenecek ücret:"+((employee.salary)+(employee.raiseSalary())));
-
+        System.out.println("employee.toString() = " + employee.toString());
 
     }
 }
