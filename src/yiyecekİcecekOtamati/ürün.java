@@ -38,6 +38,7 @@ public class ürün {
                 ", productNum=" + productNum +
                 ", price=" + price +
                 '}';
+
     }
 
     public void setKraker(double kraker) {

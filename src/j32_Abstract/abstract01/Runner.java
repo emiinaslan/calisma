@@ -1,7 +1,5 @@
 package j32_Abstract.abstract01;
 
-import javax.swing.text.Document;
-
 public class Runner {
     public static void main(String[] args) {
         Civic cvc = new Civic();
