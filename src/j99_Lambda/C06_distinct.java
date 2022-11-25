@@ -7,6 +7,7 @@ import java.util.List;
 
 public class C06_distinct {
     public static void main(String[] args) {
+        List<Integer> sayi=new ArrayList<>(Arrays.asList(24,38,49,33,7,3,42,66,45,46,55,35,25,67,16));
         List<String> menu = new ArrayList<>(Arrays.asList("küşleme","küşleme","küşleme","soğanli" ,"trilçe" ,"bicbici" ,"buryan" , "melemen","cacık","kokorec","yaglama", "guvec","arapAşi","tantuni"));
         System.out.println("\n============================");
         alfbtkBykHarfTkrrsz(menu);
@@ -16,7 +17,8 @@ public class C06_distinct {
         krtktrSysKctnByg(menu);
         System.out.println("\n============================");
         hrfTrstnSırala(menu);
-
+        System.out.println("\n============================");
+        krktrlrniCiftSayılıKarelerini(sayi);
     }//main sonu
 //List eleamnalarını alfabetik buyuk harf ve tekrarsız print ediniz
     public static void alfbtkBykHarfTkrrsz(List<String> menu){
@@ -56,4 +58,13 @@ public class C06_distinct {
                 forEach(t->System.out.print(t+" "));//print
 
     }
+    // Task : listin elemanlarin karakterlerinin cift sayıların karelerini hesaplayan,ve karelerini tekrarsiz buyukten kucuge sirali  print ediniz...
+
+    public static void krktrlrniCiftSayılıKarelerini(  List<Integer> sayi){
+        sayi.
+                stream().filter(C02_filter::çiftMi).map(t->t*t).distinct().sorted(Comparator.reverseOrder()).forEach(t->System.out.print(t+" "));
+
+    }
+
+
 }//class sonu
