@@ -18,7 +18,7 @@ public class C06_distinct {
         System.out.println("\n============================");
         hrfTrstnSırala(menu);
         System.out.println("\n============================");
-        krktrlrniCiftSayılıKarelerini(sayi);
+        krktrlrniCiftSayılıKarelerini(menu);
     }//main sonu
 //List eleamnalarını alfabetik buyuk harf ve tekrarsız print ediniz
     public static void alfbtkBykHarfTkrrsz(List<String> menu){
@@ -60,9 +60,9 @@ public class C06_distinct {
     }
     // Task : listin elemanlarin karakterlerinin cift sayıların karelerini hesaplayan,ve karelerini tekrarsiz buyukten kucuge sirali  print ediniz...
 
-    public static void krktrlrniCiftSayılıKarelerini(  List<Integer> sayi){
-        sayi.
-                stream().filter(C02_filter::çiftMi).map(t->t*t).distinct().sorted(Comparator.reverseOrder()).forEach(t->System.out.print(t+" "));
+    public static void krktrlrniCiftSayılıKarelerini( List<String> menu ){
+       menu .
+                stream().map(t->t.length()*t.length()).filter(C02_filter::çiftMi).distinct().sorted(Comparator.reverseOrder()).forEach(C01_LambdaExpression::yazdir);
 
     }
 
